@@ -98,7 +98,7 @@ suspend fun fetchPokemon(id: Int): PokemonUI = coroutineScope {
 
         PokemonUI(
             name = pokemonResponse.name,
-            number = pokemonResponse.order,
+            number = id,
             types = types,
             imageUrl = imageUrl,
             description = description
